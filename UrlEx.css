@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'pretendard',appleSDGothicNeo-Light,Malgun Gothic,dotum, sans-serif;
+}
+
+/*** header ***/
+
+.container {
+    position: relative;
+}
+.container header {
+    background: url(./images/hero-bg.png) no-repeat fixed 50% / cover;
+    background-color: lightblue;
+}
+
+/*** logo, menu ***/
+
+.container header .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    position: fixed;
+    top:0;
+}
+
+/*** logo ***/
+
+.container header h1 {
+    width: 10vw; height: 80px;
+    margin-left: 50px;
+}
+.container header h1 img {
+    width: 100px;
+}
+
+/*** menu ***/
+
+.container header #gnb {
+    width: 50vw; height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 750px;
+}
+.container header #gnb li a {
+    color: #000;
+    font-size: 1.1rem;
+}
+
+/*** 배너 ***/
+
+.container header .banner span {
+    color: #aaa;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 10vw; left: 10vw;
+}
+.container header .banner h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    position: absolute;
+    top: 15vw; left: 10vw;
+}
+.container header .banner img {
+    width: 640px; height: 640px;
+    margin: 2vw 0 0 50vw;
+}
+.container header .banner2, .container header .banner3 {
+    display: none;
+}
+.container header .banner span:last-child {
+    color: #000;
+    font-size: 3rem;
+    position: absolute;
+    top: 25vw;
+}
+
+/*** 메인 top ***/
+
+.container main .top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 15vw;
+}
+.container main .top h3 {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.container main .top p {
+    padding-top: 2vw;
+    width: 30vw;
+}
+.container main .top .txt1 {
+    grid-column: 1/3;
+    padding: 2vw;
+    margin: 0 auto;
+}
+.container main .top .txt2 {
+    grid-column: 3/5;
+    padding: 2vw;
+    margin: 0 auto;
+}
+.container main .top .txt3 {
+    grid-column: 1/3;
+    padding: 2vw;
+    margin: 0 auto;
+}
+.container main .top .txt4 {
+    grid-column: 3/5;
+    padding: 2vw;
+    margin: 0 auto;
+}
+.container main .top .bg1 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+.container main .top .bg2 {
+    grid-column: 3/4;
+}
+.container main .top .bg3 {
+    grid-column: 4/5;
+}
+.container main .top .bg4 {
+    grid-column: 3/5;
+}
+.container main .top .bg5 {
+    grid-column: 1/2;
+}
+.container main .top .bg6 {
+    grid-column: 2/3;
+}
+.container main .top .bg7 {
+    grid-column: 3/5;
+}
+
+/*** main business ***/
+
+.container main .business .lead {
+    text-align: center;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+.container main .business .lead h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 3vw;
+}
+.container main .business .box {
+    float: left;
+    margin-left: 8vw;
+    text-align: center;
+}
+.container main .business .box img {
+    width: 40vw;
+}
+.container main .business .box h5, .container main .business .box p {
+    padding-top: 2vw;
+}
+.container main .business .box h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.container main .business .box p {
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+.container main .youtube {
+    width: 100vw; height: 60vw;
+    background-color: #ddd;
+    overflow: hidden;
+}
+.container main .youtube h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 5vw;
+}
+.container main .youtube h5 {
+    width: 390px;
+    margin-left: 70vw;
+    margin-top: -7vw;
+}
+.container main .youtube iframe {
+    width: 60vw; height: 40vw;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5vw;
+}
+.container main .service h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5vw;
+}
+.container main .service .servicebox {
+    display: flex;
+    justify-content: space-between;
+} 
+.container main .service .ser {
+    width: 15vw; height: 20vw;
+    box-shadow: 5px 5px 5px 5px #ddd;
+    margin: 1.5vw;
+}
+.container main .service .ser h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1vw;
+}
+.container main .service .ser p {
+    padding: 1vw;
+    padding-top: 0;
+}
+.container main .clinet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+    display: flex;
+}
+.container main .location h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+.container main .location a {
+    display: block;
+}
+.container main .location h4 {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: bold;
+    margin-left: 10vw;
+    width: 38vw;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 1vw;
+}
+.container main .location .txt1 {
+    border-bottom: 2px solid #000;
+}
+.container main .location .txt2 {
+    margin-left: 0;
+    margin-right: 10vw;
+    border-bottom: 2px solid #ddd;
+}
+.container main .location img {
+    width: 90vw; height: 30vw;
+    margin: 3vw 5vw;
+}
+.container main .location #gnb2 {
+    margin: 2vw;
+}
+.container main .location #gnb2 li {
+    padding: 0.8vw;
+    border-bottom: 1px solid #ddd;
+    width: 90vw;
+    margin: 0 auto;
+}
+.container main .location #gnb2 span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-right: 1vw;
+}
