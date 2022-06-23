@@ -22,7 +22,7 @@ body {
     align-items: center;
     border-bottom: 1px solid #aaa;
     position: fixed;
-    top:0;
+    top:0; left: 0;
 }
 
 /*** logo ***/
@@ -40,9 +40,9 @@ body {
 .container header #gnb {
     width: 50vw; height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 750px;
+    margin-left: 700px;
 }
 .container header #gnb li a {
     color: #000;
@@ -90,7 +90,7 @@ body {
 }
 .container main .top p {
     padding-top: 2vw;
-    width: 30vw;
+    width: 20vw;
 }
 .container main .top .txt1 {
     grid-column: 1/3;
@@ -113,26 +113,117 @@ body {
     margin: 0 auto;
 }
 .container main .top .bg1 {
+    background: url(./images/1.jpg) no-repeat 50% / cover;
     grid-column: 1/3;
     grid-row: 3/5;
 }
+.container main .top .bg1 p {
+  display: none;
+}
+.container main .top .bg1:hover p {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
 .container main .top .bg2 {
+    background: url(./images/2.jpg) no-repeat 50% / cover;
     grid-column: 3/4;
 }
+.container main .top .bg2 p {
+    display: none;
+}
+.container main .top .bg2:hover p {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
 .container main .top .bg3 {
+    background: url(./images/3.jpg) no-repeat 50% / cover;
     grid-column: 4/5;
 }
+.container main .top .bg3 p {
+    display: none;
+}
+.container main .top .bg3:hover p {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
 .container main .top .bg4 {
+    background: url(./images/4.jpg) no-repeat 50% / cover;
     grid-column: 3/5;
+}
+.container main .top .bg4 p {
+    display: none;
+}
+.container main .top .bg4:hover p {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
 }
 .container main .top .bg5 {
+    background: url(./images/5.jpg) no-repeat 50% / cover;
     grid-column: 1/2;
 }
+.container main .top .bg5 p {
+    display: none;
+}
+.container main .top .bg5:hover p {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
 .container main .top .bg6 {
+    background: url(./images/6.jpg) no-repeat 50% / cover;
     grid-column: 2/3;
 }
+.container main .top .bg6 p {
+    display: none;
+}
+.container main .top .bg6:hover p {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
 .container main .top .bg7 {
+    background: url(./images/7.jpg) no-repeat 50% / cover;
     grid-column: 3/5;
+}
+.container main .top .bg7 p {
+    display: none;
+}
+.container main .top .bg7:hover p {
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
 }
 
 /*** main business ***/
@@ -153,7 +244,7 @@ body {
     text-align: center;
 }
 .container main .business .box img {
-    width: 40vw;
+    width: 40vw; height: 40vw;
 }
 .container main .business .box h5, .container main .business .box p {
     padding-top: 2vw;
@@ -167,7 +258,7 @@ body {
     padding-bottom: 2vw;
 }
 .container main .youtube {
-    width: 100vw; height: 60vw;
+    width: 100%; height: 60vw;
     background-color: #ddd;
     overflow: hidden;
 }
@@ -203,7 +294,7 @@ body {
     margin: 1.5vw;
 }
 .container main .service .ser h4 {
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     font-weight: bold;
     padding: 1vw;
 }
@@ -216,7 +307,6 @@ body {
     grid-template-columns: repeat(6, 1fr);
     margin-top: 12vw;
     margin-bottom: 12vw;
-    display: flex;
 }
 .container main .location h2 {
     font-size: 3rem;
@@ -248,10 +338,11 @@ body {
 }
 .container main .location img {
     width: 90vw; height: 30vw;
-    margin: 3vw 5vw;
+    margin: 3vw 4vw;
 }
 .container main .location #gnb2 {
-    margin: 2vw;
+    margin: 3vw;
+    margin-bottom: 15vw;
 }
 .container main .location #gnb2 li {
     padding: 0.8vw;
@@ -263,4 +354,28 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     padding-right: 1vw;
+}
+.container main .box2 {
+    color: #fff;
+    background: url(./images/img-bg.jpg) no-repeat fixed 50% / cover;
+    background-color: lightblue;
+    height: 50vw;
+    text-align: center;
+}
+.container main .box2 h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 15vw;
+}
+.container main .box2 h4 {
+    font-size: 1.6rem;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    font-weight: 100;
+}
+.container main .box2 a {
+    color: #fff;
+    font-size: 1.6rem;
+    border: 2px solid #fff;
+    padding: 0.8vw;
 }
