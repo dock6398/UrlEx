@@ -2,7 +2,12 @@
 
 body {
     font-family: 'pretendard',appleSDGothicNeo-Light,Malgun Gothic,dotum, sans-serif;
+    scroll-behavior: smooth;/* 부드러운 스크롤 */
 }
+::-webkit-scrollbar { width: 10px;}
+::-webkit-scrollbar-track { background-color: #fff;}
+::-webkit-scrollbar-thumb {background-color: #000;}
+
 
 /*** header ***/
 
@@ -118,112 +123,127 @@ body {
     grid-row: 3/5;
 }
 .container main .top .bg1 p {
-  display: none;
+    width: 100%; height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(-30px);
+    opacity: 0;
+    transition: .4s;
 }
 .container main .top .bg1:hover p {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
     cursor: pointer;
+    opacity: 1;
 }
 .container main .top .bg2 {
     background: url(./images/2.jpg) no-repeat 50% / cover;
     grid-column: 3/4;
 }
 .container main .top .bg2 p {
-    display: none;
+    width: 100%; height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(-30px);
+    opacity: 0;
+    transition: .4s;
 }
 .container main .top .bg2:hover p {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
     cursor: pointer;
+    opacity: 1;
 }
 .container main .top .bg3 {
     background: url(./images/3.jpg) no-repeat 50% / cover;
     grid-column: 4/5;
 }
 .container main .top .bg3 p {
-    display: none;
+    width: 100%; height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(-30px);
+    opacity: 0;
+    transition: .4s;
 }
 .container main .top .bg3:hover p {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
     cursor: pointer;
+    opacity: 1;
 }
 .container main .top .bg4 {
     background: url(./images/4.jpg) no-repeat 50% / cover;
     grid-column: 3/5;
 }
 .container main .top .bg4 p {
-    display: none;
+    width: 100%; height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(-30px);
+    opacity: 0;
+    transition: .4s;
 }
 .container main .top .bg4:hover p {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
     cursor: pointer;
+    opacity: 1;
 }
 .container main .top .bg5 {
     background: url(./images/5.jpg) no-repeat 50% / cover;
     grid-column: 1/2;
 }
 .container main .top .bg5 p {
-    display: none;
+    width: 100%; height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(-30px);
+    opacity: 0;
+    transition: .4s;
 }
 .container main .top .bg5:hover p {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
     cursor: pointer;
+    opacity: 1;
 }
 .container main .top .bg6 {
     background: url(./images/6.jpg) no-repeat 50% / cover;
     grid-column: 2/3;
 }
 .container main .top .bg6 p {
-    display: none;
+    width: 100%; height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(-30px);
+    opacity: 0;
+    transition: .4s;
 }
 .container main .top .bg6:hover p {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
     cursor: pointer;
+    opacity: 1;
 }
 .container main .top .bg7 {
     background: url(./images/7.jpg) no-repeat 50% / cover;
     grid-column: 3/5;
 }
 .container main .top .bg7 p {
-    display: none;
+    width: 100%; height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(-30px);
+    opacity: 0;
+    transition: .4s;
 }
 .container main .top .bg7:hover p {
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, .7);
+    transform: rotateY(0);
     cursor: pointer;
+    opacity: 1;
+    backdrop-filter: blur(4px);/* 해당 요소 제외하고 블러*/
 }
 
 /*** main business ***/
@@ -240,11 +260,15 @@ body {
 }
 .container main .business .box {
     float: left;
-    margin-left: 8vw;
+    margin-left: 7vw;
     text-align: center;
 }
+.container main .business .box:nth-child(odd) {
+    margin-right: 7vw;
+    margin-left: 1vw;
+}
 .container main .business .box img {
-    width: 40vw; height: 40vw;
+    width: 800px; height: 850px;
 }
 .container main .business .box h5, .container main .business .box p {
     padding-top: 2vw;
@@ -338,7 +362,7 @@ body {
 }
 .container main .location img {
     width: 90vw; height: 30vw;
-    margin: 3vw 4vw;
+    margin: 3vw 4.5vw;
 }
 .container main .location #gnb2 {
     margin: 3vw;
@@ -378,4 +402,53 @@ body {
     font-size: 1.6rem;
     border: 2px solid #fff;
     padding: 0.8vw;
+}
+.container footer {
+    position: relative;
+}
+.container footer .content img {
+    margin: 5vw 0vw 5vw 20vw;
+    float: left;
+}
+.container footer .content .txtbox1 {
+    position: absolute;
+    top: 6vw; left: 38vw;
+}
+.container footer .content .txtbox1 h4 {
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.container footer .content .txtbox2 {
+    position: absolute;
+    top: 6vw; left: 50vw;
+}
+.container footer .content .txtbox2 h4 {
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.container footer .content .txtbox3 {
+    position: absolute;
+    top: 6vw; left: 64vw;
+}
+.container footer .content .txtbox3 h4 {
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.container footer .content .txtbox3 a {
+    color: #000;
+}
+.container footer .copyrights {
+    text-align: center;
+    background-color: #ddd;
+    width: 100%;
+    position: absolute;
+    top: 15vw;
+}
+.container footer .copyrights p {
+    margin: 3vw 0 2vw;
+}
+.container footer .copyrights a {
+    color: #000;
+    display: block;
+    margin: 2vw 0 3vw;
 }
